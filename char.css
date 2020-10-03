@@ -1,0 +1,658 @@
+body{
+	margin:0;
+}
+.font-internal-title{
+	font-size:10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color:#979AA4;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:800;
+}
+.font-internal-number-big{
+	font-family: 'Roboto', sans-serif;
+	text-align:left;
+	font-size:26px;
+	font-weight:500;
+	color:#242528;
+}
+
+.font-internal-number-really-big{
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+	font-size:38px;
+	font-weight:500;
+	color:#242528;
+}
+.font-internal-addtnlvalue{
+	font-family: 'Roboto', sans-serif;
+	text-align:right;
+	color:#b5b5b5;
+	font-size:16px;
+}
+.font-internal-secondary{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align:center;
+	font-size:13px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#242528;
+}
+.font-internal-numbersecondary{
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+	font-size:16px;
+	font-weight:500;
+	text-transform:uppercase;
+	color:#242528;
+}
+.font-internal-normal{
+	font-family: 'Roboto', sans-serif;
+	font-size:12px;
+	color:#242528;
+}
+/* Sidebar Class */
+.js-open-rip{
+	cursor: crosshair; /* Cursor Change for Elements that Activate Sidebar */
+}
+/* Site / Account Info  */
+.sitebar-background{
+	background-color: black;
+	border-bottom: 1px solid white;
+	height:65px;
+}
+.sitebar-container{
+	max-width:1200px;
+	height:100%;
+	margin:auto;
+}
+/* Nav Bar */
+.navbar-background{
+	background-color: #565656;
+	border-bottom: 1px solid #515151;
+	height:55px;
+}
+.navbar-container{
+	max-width:1200px;
+	height:100%;
+	margin:auto;
+}
+/* Everything Underneath Site Constants */
+.main-site-content{
+	/* background-image: url(background.jpg);	 */
+	/* background-repeat:no-repeat; */
+	background-color:#588e89;
+}
+/* Character Sheet */
+.charactersheet::before{
+	content:"";
+	background-color: #3a3a3a;
+	height:105px;
+	width:100%;
+	position:absolute;
+	left:0;
+}
+.charactersheet{
+	max-width:1200px;
+	margin:auto;
+}
+.characterbar-container{
+	height:105px;
+	z-index:5;
+}
+.charactersheet-content{
+	max-width:1200px;
+	display:flex;
+	flex-direction:column;
+}
+/* Top Stat Bar */
+.topbar-full-container{
+	margin-top:-18px;
+	z-index:6;
+	position:relative;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+/* Half Lines Top Stat Bar */
+.topbar-half-container{
+	height:95px;
+	display:flex;
+	justify-content:space-between;
+}
+#topbar-firsthalf-container{
+	width:564px;
+}
+#topbar-secondhalf-container{
+	width:620px;
+}
+/* All Top Bar Containers */
+.topbar-boxes{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	border: 2px solid blue;
+	background-color:white;
+	padding:4px;
+
+}
+/* Core Stat Bar Containers */
+.stat-box{
+	width:69px;
+	/* background-image: url("SVG/smalltopbox.svg"); */
+	background-repeat:no-repeat;
+	background-position:-1px;
+}
+.modifierbox{
+	padding-top:5px;
+	text-align:center;
+}
+.statbox-sign{
+	width:40%;
+	margin-right:1px;
+	padding-top:6px;
+}
+/* Speed Box */
+#speed-statbox{
+	width:82px;
+	/* background-image: url("SVG/biggertopbox.svg"); */
+	background-repeat:no-repeat;
+}
+#speed-statbox-score{
+	width:64%;
+	text-align:right;
+}
+#speed-statbox-numbercontainer{
+	display:flex;
+}
+#speed-statbox-ft{
+	padding-top:10px;
+	padding-left:4px;
+}
+/* Proficiency Box */
+#proficiency-statbox{
+	width:82px;
+}
+#proficiency-text{
+	padding-top:5px;
+}
+/* Inspiration Box */
+#inspiration-statbox{
+	width:75px;
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+}
+#inspiration-statbox-checkbox{
+	height:40%;
+}
+#inspiration-statbox-textbox{
+	padding-bottom:6px;
+	color:white;
+}
+/* Health Box */
+#health-statbox{
+	width:296px;
+	display:flex;
+	flex-direction:row;
+}
+#health-statbox-addsubtract{
+	width:27%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+/* Health Buttons */
+.change-health-button{
+	background-color:white;
+	border-radius:5px;
+	width:87%;
+	margin:0px auto 0px auto;
+	font-size:10px;
+	height:23%;
+}
+.change-health-button:focus{
+	outline:none;
+}
+/* Heal Button */
+#heal{
+	color:#40D250;
+	border: 1px solid #40D250;
+}
+#heal:hover{
+	box-shadow: 0 0 2px #40D250;
+}
+#heal:active{
+	background-color:#40D250;
+	color:white;
+}
+/* Health Input Box */
+#health-input{
+	border:1px solid #e5e5e5;
+	border-radius:5px;
+	text-align:center;
+	width:87%;
+	margin:0px auto 0px auto;
+	font-size:18px;
+	height:29%;
+}
+/* Damage Button */
+#damage{
+	color:#D24040;
+	border: 1px solid #D24040;
+}
+#damage:hover{
+	box-shadow: 0 0 2px #D24040;
+}
+#damage:active{
+	background-color:#D24040;
+	color:white;
+}
+#health-statbox-currentandmax-container{
+	width:45%;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	margin-bottom:2px;
+}
+#health-statbox-totals{
+	display:flex;
+	justify-content: space-between;
+}
+.hpboxes{
+	width:62px;
+}
+.hptitle{
+	font-size:14px;
+}
+.hpnumber{
+	text-align:center;
+	margin-top:8px;
+}
+#health-statbox-slash{
+	margin-top:23px;
+	font-size:29px;
+}
+#health-statbox-temphp-box{
+	width:25%;
+}
+#health-statbox-temphp-input{
+	width:60%;
+	border:none;
+	margin:7px 0px 0px 22px;
+}
+/* Bars Line - Encumberance and Exhaustion*/
+.ee-bars{
+	margin-top:25px;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+.bar-containers{
+	height:50px;
+	background-color:white;
+	display:flex;
+	justify-content:space-between;
+}
+.bar-titles{
+	position:relative;
+	top:-70px;
+	font-size:34px;
+}
+/* Exhaustion Bar */
+#exhaustion-bar{
+	width:564px;
+}
+.exhaustion-buttons{
+	width:10%;
+	background-color:#828282;
+}
+#exhaustion-bar-empty{
+	width:80%;
+}
+#exhaustion-bar-full{
+	background-color:purple;
+	width:0%;
+	height:100%;
+}
+/* Encumberance Bar */
+#encumberance-bar{
+	width:620px;
+}
+#encumberance-bar-empty{
+	width:100%;
+}
+#encumberance-bar-full{
+	background-color:purple;
+	width:0%;
+	height:100%;
+}
+/* Main Boxes */
+.main-panes{
+	margin-top:25px;
+	display:flex;
+	justify-content:space-between;
+}
+/* Left Two Columns in Main Pane */
+.mainpanes-leftandmiddle-columns{
+	display:flex;
+	justify-content:space-between;
+	width:564px;
+}
+/* Left Column */
+.mainpanes-left-column{
+	width: 274px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+/* All Main Pane Containers */
+.mainpanes-containers{
+	background-color:white;
+	border:blue 2px solid;
+}
+/* Left Column Containers */
+/* Saving Throws Box */
+#savingthrows-container{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	padding:5px;
+	height:200px;
+}
+#savingthrows-scores{
+	display:flex;
+	justify-content:space-between;
+	height:50%;
+	padding:23px 0px 3px 0px;
+}
+#savingthrows-additional{
+	height:35%;
+}
+#savingthrows-title{
+	height:10%;
+}
+.savingthrows-columns{
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.savingthrow-rows{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.savingthrow-icons{
+	background-color:black;
+	width:14%;
+	height:18px;
+}
+.savingthrow-texts{
+	width:45%;
+	font-size:16px;
+}
+.savingthrow-modifiers{
+	width:20%;
+}
+/* Senses Box */
+#senses-container{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	height:200px;
+	padding-bottom:5px;
+}
+#senses-scores{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	height:50%;
+	padding:28px 0px 3px 0px;
+}
+#senses-additional{
+	height:35%;
+}
+#senses-title{
+	height:10%;
+}
+.senses-rows{
+	display:flex;
+	justify-content:center;
+}
+.senses-texts{
+	width:75%;
+	font-size:14px;
+}
+.senses-modifiers{
+	width:20%;
+}
+/* Proficiencies Box */
+#proficiencies-container{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	padding:5px;
+	height:300px;
+}
+#proficiencies-groups{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	height:80%;
+	padding:23px 22px 3px 22px;
+	overflow-y:auto;
+}
+.proficiencies-grouptitles{
+	text-align:left;
+	font-size:14px;
+}
+.proficiencies-containers{
+	height:25%;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom:5px;
+}
+/* Middle Column */
+.mainpanes-middle-column{
+	width: 274px;
+}
+/* Skills Container */
+#skills-container{
+	height:765px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	padding-bottom:5px;
+}
+#skills-categories{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	padding:27px;
+}
+.skill-rows{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:19px;
+	align-items:center;
+}
+.skill-row-prof{
+	width:10%;
+}
+.skill-row-mod{
+	width:20%;
+}
+.skill-row-skill{
+	width:60%;
+}
+.skill-row-bonus{
+	width:10%;
+}
+#skills-header-mod{
+	text-align:center;
+}
+#skills-header-skill{
+	text-align:left;
+	width:50%;
+}
+#skills-header-bonus{
+	width:20%;
+}
+/* Right Column */
+.mainpanes-right-column{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.mainpanes-rightcolumn-containers{
+	width:620px;
+}
+.active-rightwindow{
+	height:448px;
+	order:1;
+}
+.unactive-rightwindow{
+	height:184px;
+	order:2;
+}
+/* Roleplay Container */
+#roleplay-container{
+	display:flex;
+	flex-direction:column;
+}
+#roleplay-navmenu-container{
+	display:flex;
+	width:50%;
+	justify-content:space-between;
+	padding:27px 0px 0px 27px;
+}
+.roleplay-menu-buttons{
+	font-size:16px;
+}
+.roleplay-inner-window{
+	height:90%;
+	margin:10px;
+}
+.active-roleplay-topmenu{
+	border-bottom:2px red solid;
+	color:black;
+}
+.inactive-roleplay-topmenu{
+	border-bottom:none;
+}
+.active-inner-window{
+	display:flex;
+	flex-direction:column;
+}
+.inactive-inner-window{
+	display:none;
+}
+.roleplay-submenus{
+	height:5%;
+	display:flex;
+	justify-content:flex-start;
+	padding:5px 0px 0px 16px;
+	width:100%;
+}
+.submenu-buttons{
+	font-size:12px;
+	margin:0px 13px 0px 0px;
+	background-color:#c4c4c4;
+	line-height:1.5;
+	padding:0px 6px 0px 6px;
+	color:white;
+}
+
+.active-meatywindow{
+	display:flex;
+}
+.inactive-meatywindow{
+	display:none;
+}
+
+
+
+
+/* Combat Container */
+#combat-container{
+}
+/* Right Info Panel */
+.right-info-pane {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: orange;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: .3s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.rip-title{
+	height:50px;
+	width:100%;
+	background-color:purple;
+	text-align:center;
+	font-size:25px;
+	padding-top:15px;
+	transition:.1s;
+
+}
+
+.rip-content{
+	padding:15px;
+	text-align:center;
+	font-size:20px;
+	transition:.1s;
+}
+
+/* Reflexive Site */
+	@media (max-width: 1200px) {
+	  #topbar-firsthalf-container{
+		/* Bounce Bar Down Off Character Bar (If Wanted) */
+			/* margin-top:12px; */
+		width:624px;
+		margin-left:auto;
+		margin-right:auto;
+	  }
+	  .charactersheet-content{
+		  max-width:624px;
+		  margin:auto;
+	  }
+	  #topbar-secondhalf-container{
+		/* width:592px; */
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:16px;
+	  }
+	  .ee-bars{
+		  /* width:592px; */
+		  margin-left:auto;
+		  margin-right:auto;
+	  }
+	  #exhaustion-bar{
+		  width:624px;
+	  }
+	  #encumberance-bar{
+		  margin-top:25px;
+	  }
+	  .main-panes{
+		  flex-direction:column-reverse;
+		  height:auto;
+		  /* width:592px; */
+		  margin-left:auto;
+		  margin-right:auto;
+	  }
+	  .mainpanes-rightcolumn-containers{
+		  /* width:592px; */
+	  }
+	  #combat-container{
+		  margin-top:16px;
+	  }
+	  .mainpanes-leftandmiddle-columns{
+		  margin-top:16px;
+		  width:624px;
+	  }
+
+	}
